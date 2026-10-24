@@ -1,0 +1,36 @@
+/* Материалы к книге «Архитектура Контроля»: фон #FAF8F3, тонкие линии, один красный акцент */
+:root { --bg: #FAF8F3; --ink: #111111; --grey: #5c5c5c; --red: #BE1E28; --line: #111111; }
+* { box-sizing: border-box; }
+html { font-size: 18px; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif; line-height: 1.6; }
+.wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+header { border-top: 3px solid var(--red); padding-top: 1.1rem; margin-bottom: 2rem; }
+.brand { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--grey); margin: 0 0 1.4rem; }
+.brand a { color: inherit; text-decoration: none; }
+h1 { font-size: 1.9rem; line-height: 1.25; font-weight: 600; margin: 0 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; font-weight: 600; margin: 0 0 .5rem; }
+h3 { font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; color: var(--grey); margin: 1.6rem 0 .4rem; }
+p { margin: 0 0 .9rem; }
+.lead { font-size: 1.05rem; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--red); }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.tool { border-top: 1px solid var(--line); padding: 1.4rem 0 1.5rem; }
+.tool:last-of-type { border-bottom: 1px solid var(--line); }
+.num { color: var(--red); font-size: .8rem; letter-spacing: .16em; margin: 0 0 .15rem; }
+.tool p { margin-bottom: .7rem; }
+.btn { display: inline-block; border: 1px solid var(--red); color: var(--red); background: transparent;
+  padding: .45rem 1.1rem; font: inherit; font-size: .9rem; text-decoration: none; }
+.btn:hover, .btn:focus-visible { background: var(--red); color: var(--bg); }
+.meta { font-size: .8rem; color: var(--grey); margin-left: .6rem; }
+.more { font-size: .9rem; margin-left: 1rem; }
+ul.where { margin: 0 0 .9rem; padding-left: 1.2rem; }
+ul.where li { margin-bottom: .4rem; }
+.note { border-top: 1px solid var(--line); padding-top: 1rem; font-size: .9rem; color: var(--grey); }
+.note strong { color: var(--ink); font-weight: 600; }
+.back { margin-top: 2.2rem; font-size: .95rem; }
+footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: .8rem; font-size: .78rem; color: var(--grey); }
+@media (max-width: 30rem) { html { font-size: 17px; } h1 { font-size: 1.6rem; } .meta { display: block; margin: .5rem 0 0; } .more { display: inline-block; margin: .6rem 0 0; } }
+@media print { body { background: #fff; } .btn { border-color: #000; color: #000; } }
